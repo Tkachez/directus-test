@@ -2,10 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
-  modules: [
-    '@nuxtjs/tailwindcss',
-    'nuxt-directus'
-  ],
+  modules: ['@nuxtjs/tailwindcss', 'nuxt-directus', 'nuxt-security'],
 
   directus: {
     url: 'https://neon-directus.onrender.com/',
