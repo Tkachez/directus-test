@@ -8,7 +8,25 @@ export default defineNuxtConfig({
   ],
 
   directus: {
-    url: '',
+    url: 'https://neon-directus.onrender.com/',
     devtools: true
-  }
+  },
+
+  tailwindcss: {
+    configPath: 'tailwind.config',
+    cssPath: ['~/assets/styles/main.scss', { injectPosition: 'first' }]
+  },
+
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {}
+    }
+  },
+
+  googleFonts: {
+    families: {
+      'Inter Tight': '200..700'
+    }
+  },
 })
